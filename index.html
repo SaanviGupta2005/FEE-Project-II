@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="w-screen h-screen flex justify-center items-center bg-cover bg-no-repeat bg-center box-border p-0 m-0"
+    style="background-image: url('assets/images/image.jpeg');">
+    <h1 class="absolute top-20 text-5xl font-bold text-white animate-bounce w-fit">QUIZZIE</h1>
+    <div id="container" class="w-2/4 justify-center">
+        <div id="question-container" class="hidden">
+            <div id="question" class="font-medium text-2xl text-white">Question</div>
+            <div id="answer-buttons" class="grid gap-4 grid-cols-2 my-5">
+            </div>
+            <div id="timer" class="relative w-full bg-gray-200 rounded-lg mt-4 h-4 hidden">
+                <div id="timer-bar-fill"
+                    class="absolute top-0 left-0 h-full bg-green-500 rounded-2xl animate-timer-grow"></div>
+            </div>
+        </div>
+        <div class="flex justify-center">
+            <button id="start-btn"
+                class="bg-pink-700 px-9 py-3 text-white text-2xl 
+                rounded-lg hover:bg-pink-400 m-7 transition duration-150 ease-out hover:ease-in">
+                Start
+            </button>
+            <button id="next-btn"
+                class="bg-pink-700 px-9 py-3 text-white text-2xl 
+                rounded-lg hover:bg-pink-400 m-7 transition duration-150 ease-out hover:ease-in hidden">
+                Next
+            </button>
+            <button id="exit-btn"
+                class="bg-pink-700 px-9 py-3 text-white text-2xl 
+                rounded-lg hover:bg-pink-400 m-7 transition duration-150 ease-out hover:ease-in hidden">
+                Exit
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
